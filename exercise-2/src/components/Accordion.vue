@@ -51,6 +51,7 @@ onBeforeMount(() => setValues());
   max-width 500px
   &__item
     margin-bottom 6px
+    font-family 'Poppins', sans-serif
     .accordion
       &__title
         color #fff
@@ -61,7 +62,6 @@ onBeforeMount(() => setValues());
         justify-content space-between
         cursor pointer
         background #f57c51
-        font-family 'Poppins', sans-serif
       &__content
         background #fcbc58
         border-radius 6px
