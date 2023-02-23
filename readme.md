@@ -20,4 +20,10 @@
  - Typescript
 
 ## The reason why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`
+
 `('b' + 'a' + + 'a' + 'a').toLowerCase()` will be evaluated as `('b' + 'a' + (+'a') + 'a').toLowerCase()`
+
+ 1. string `b` will be concatenated with string `a` resulting to string `ba`
+ 2. javascript will try to convert the second `a` to a number due to the unary plus, since it is a string it will result in `NaN`, our result now would be `baNaN`
+ 3. the last string `a` would be concatenated to the previous string resulting in `baNaNa`
+ 4. `toLowerCase()` converts all the characters to lowercase, thus resulting in `banana`
