@@ -18,3 +18,6 @@
  - [Bootstrap](https://getbootstrap.com/) - *grid and reset only*
  - [Vue JS](https://vuejs.org/guide/introduction.html#what-is-vue)
  - Typescript
+
+## The reason why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`
+`('b' + 'a' + + 'a' + 'a').toLowerCase()` will be evaluated as `('b' + 'a' + (+'a') + 'a').toLowerCase()`
